@@ -73,7 +73,7 @@ export default function useScrollCapture({
         cancelScroll(event);
       }
     },
-    []
+    [onBottomArrive, onBottomLeave, onTopArrive, onTopLeave]
   );
 
   const onWheel = useCallback(
